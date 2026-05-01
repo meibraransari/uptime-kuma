@@ -228,7 +228,8 @@ docker compose up -d --force-recreate
 
 ### 📖 Official Documentation
 
-* (Add official documentation link here if needed)
+- **GitHub Repository:** [louislam/uptime-kuma](https://github.com/louislam/uptime-kuma)
+- **Official Website:** [https://uptime.kuma.pet/](https://uptime.kuma.pet/)
 
 ### 🚀 Demo
 
