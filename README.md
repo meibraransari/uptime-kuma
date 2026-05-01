@@ -1,4 +1,16 @@
-# 🐻 Uptime Kuma Deep Dive & Setup Guide
+# Uptime Kuma Deep Dive & Setup Guide
+
+
+<div align="center" width="100%">
+    <img src="./public/icon.svg" width="128" alt="Uptime Kuma Logo" />
+
+
+**Uptime Kuma** is a free and open-source monitoring tool for your websites and applications. It provides real-time notifications when your services go down and helps you keep track of their availability.
+
+**GitHub Repository:** [louislam/uptime-kuma](https://github.com/louislam/uptime-kuma)
+**Official Website:** [https://uptime.kuma.pet/](https://uptime.kuma.pet/)
+
+</div>
 
 In this guide, we will cover a deep dive into Uptime Kuma, including:
 - UI overview
