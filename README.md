@@ -95,7 +95,7 @@ services:
       - UPTIME_KUMA_PORT=3001
     volumes:
       - ./kuma-data:/app/data
-
+      - /var/run/docker.sock:/var/run/docker.sock:ro # Optional: for Docker monitoring
   mariadb:
     image: mariadb:11.4
     container_name: mariadb
@@ -159,6 +159,8 @@ du -sh ./mariadb-data/tmp
 
 ```bash
 #!/bin/bash
+sudo apt update && sudo apt install sqlite3 -y
+
 DB_PATH="./kuma.db"
 
 sqlite3 "$DB_PATH" <<EOF
