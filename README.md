@@ -13,6 +13,11 @@
 </div>
 
 
+## 🎬 Video Demonstration
+
+[![Watch on Youtube](https://i.ytimg.com/vi/V3TW_E4teJ4/maxresdefault.jpg)](https://youtu.be/V3TW_E4teJ4)
+
+
 
 ## 📑 Table of Contents
 In this guide, we will cover a deep dive into Uptime Kuma, including:
