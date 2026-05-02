@@ -34,6 +34,10 @@ There are two types of database setups:
 
 > https://uptimekuma.org/install-uptime-kuma-docker/
 
+```bash
+# Enter proper project path
+cd /srv/projects/uptime_kuma
+```
 ```yaml
 services:
   uptime-kuma:
@@ -161,6 +165,7 @@ du -sh ./mariadb-data/tmp
 #!/bin/bash
 sudo apt update && sudo apt install sqlite3 -y
 
+cd ./mariadb-data/tmp
 DB_PATH="./kuma.db"
 
 sqlite3 "$DB_PATH" <<EOF
