@@ -12,13 +12,10 @@
 
 </div>
 
-In this guide, we will cover a deep dive into Uptime Kuma, including:
-- UI overview
-- SQLite-based setup
-- MariaDB/MySQL-based setup
-- Migration from SQLite to MySQL/MariaDB
+
 
 ## 📑 Table of Contents
+In this guide, we will cover a deep dive into Uptime Kuma, including:
 - [1️⃣ SQLite Setup](#1️⃣-sqlite-setup)
 - [2️⃣ MariaDB/MySQL Setup](#2️⃣-mariadbmysql-setup)
 - [3️⃣ Migration (SQLite to MariaDB)](#3️⃣-migration-sqlite-to-mariadb)
