@@ -1,4 +1,4 @@
-# Uptime Kuma Deep Dive & Setup Guide
+# Uptime Kuma Setup Guide + Migration from SQLite to MySQL/MariaDB
 
 
 <div align="center" width="100%">
