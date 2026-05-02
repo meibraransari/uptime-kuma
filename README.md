@@ -18,7 +18,6 @@
 [![Watch on Youtube](https://i.ytimg.com/vi/V3TW_E4teJ4/maxresdefault.jpg)](https://youtu.be/V3TW_E4teJ4)
 
 
-
 ## 📑 Table of Contents
 In this guide, we will cover a deep dive into Uptime Kuma, including:
 - [1️⃣ SQLite Setup](#1️⃣-sqlite-setup)
@@ -105,6 +104,17 @@ services:
     volumes:
       - ./kuma-data:/app/data
       - /var/run/docker.sock:/var/run/docker.sock:ro # Optional: for Docker monitoring
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3001"]
+      interval: 30s
+      retries: 3
+      start_period: 10s
+      timeout: 5s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
   mariadb:
     image: mariadb:11.4
     container_name: mariadb
@@ -123,6 +133,11 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
 ```
 
 **Access URL:**
